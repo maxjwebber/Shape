@@ -1,3 +1,5 @@
+import java.lang.Math;
+
 public class Shape {
     private String name;
     public Shape(String name) {

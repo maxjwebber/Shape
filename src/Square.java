@@ -6,7 +6,7 @@ public class Square extends Shape {
         super(name);
     }
 
-    public void setDimensions(int radius)
+    public void setDimensions(int height, int length)
     {
         this.height = height;
         this.length = length;
@@ -14,5 +14,10 @@ public class Square extends Shape {
     @Override
     public void printDimensions() {
         System.out.println("Dimensions: "+height+" by "+length);
+    }
+
+    @Override
+    public double getArea() {
+        return height*length;
     }
 }

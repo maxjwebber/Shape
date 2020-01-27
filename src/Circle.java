@@ -14,4 +14,9 @@ public class Circle extends Shape {
     public void printDimensions() {
         System.out.println("Dimensions: radius is "+radius);
     }
+
+    @Override
+    public double getArea() {
+        return Math.PI*radius*radius;
+    }
 }
